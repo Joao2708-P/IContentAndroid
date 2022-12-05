@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background1"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imagemCadastro"
+        android:layout_width="385dp"
+        android:layout_height="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icontent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/Cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logar"
+        android:textColor="@color/white"
+        android:textSize="5.0mm"
+        app:layout_constraintBaseline_toBottomOf="@id/imagemCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <RelativeLayout
+        android:id="@+id/designCadastro"
+        android:layout_width="287dp"
+        android:layout_height="421dp"
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cadastro"
+        app:layout_constraintVertical_bias="0.115">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/elipse"
+            app:srcCompat="@drawable/user" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="4dp"
+            android:textColor="@drawable/border"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/background"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textColor="@drawable/border"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="341dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/elipse2"
+            android:text="logar"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvCadastro"
+            android:layout_width="223dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="39dp"
+            android:text="Não possui uma conta?" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

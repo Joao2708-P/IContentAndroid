@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background1"
+    tools:context=".Forms.Feed">
+
+
+    <ImageView
+        android:id="@+id/imagemCadastro"
+        android:layout_width="374dp"
+        android:layout_height="229dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icontent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-33dp" />
+
+    <TextView
+        android:id="@+id/Cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="5.0mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagemCadastro"
+        app:layout_constraintVertical_bias="0.277"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/designCadastro"
+        android:layout_width="297dp"
+        android:layout_height="498dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:padding="4dp"
+            android:textColor="@drawable/border"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/idFoto"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/elipse"
+            app:srcCompat="@drawable/user" />
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="4dp"
+            android:textColor="@drawable/border" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtNome"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textColor="@drawable/border" />
+
+        <EditText
+            android:id="@+id/edtSenha2"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtSenha"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:hint="Confirmar Senha"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textColor="@drawable/border" />
+
+        <!-- <EditText
+            android:id="@+id/edtNIvelEscolar"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtNome"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/background"
+            android:hint="Nivel Escolar"
+            android:inputType=""
+            android:padding="4dp"
+            android:textColor="@drawable/border" /> -->
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="249dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/background"
+            android:entries="@array/spinner"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="207dp" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="415dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/elipse2"
+            android:text="Cadastrar"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvContaExixtente"
+            android:layout_width="168dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="70dp"
+            android:text="Já possui uma conta?" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
